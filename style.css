@@ -1,0 +1,86 @@
+body{
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;    
+}
+
+.searchInput::placeholder{
+    color: lightgray;
+}
+
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
+.slider{
+    background: url(https://media.istockphoto.com/id/1489006553/photo/close-up-macro-view-of-sole-of-shoe-in-full-frame.webp?a=1&b=1&s=612x612&w=0&k=20&c=j8zsoMwWN1cA4e1ASiB7hIA_pVhquH7CtOv-qyJuCPw=);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 72%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+
+}
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+} 
+
+.sliderTittle{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+
