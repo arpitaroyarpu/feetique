@@ -54,10 +54,10 @@ nav{
 }
 
 .slider{
-    background: url(https://media.istockphoto.com/id/1489006553/photo/close-up-macro-view-of-sole-of-shoe-in-full-frame.webp?a=1&b=1&s=612x612&w=0&k=20&c=j8zsoMwWN1cA4e1ASiB7hIA_pVhquH7CtOv-qyJuCPw=);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 72%);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url(https://media.istockphoto.com/id/1489006553/photo/close-up-macro-view-of-sole-of-shoe-in-full-frame.webp?a=1&b=1&s=612x612&w=0&k=20&c=j8zsoMwWN1cA4e1ASiB7hIA_pVhquH7CtOv-qyJuCPw=);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 72%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sliderWrapper{
@@ -74,13 +74,98 @@ nav{
     position: relative;
 } 
 
-.sliderTittle{
+.sliderBg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.sliderImg{
+    z-index: 1;
+}
+
+.sliderTitle{
     position: absolute;
     top: 20%;
-    right: 10%;
+    right: 100px;
     font-size: 60px;
     font-weight: 900;
     text-align: center;
     color: white;
+    z-index: 1;
 }
 
+
+.sliderPrice{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+}
+
+
+.buyButton{
+    position: absolute;
+    top: 55%;
+    right: 12%;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+    background-color: black;
+    z-index: 1;
+}
+
+.buyButton:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.sliderItem:nth-child(1) .sliderBg{
+    background-color: orangered;
+}
+
+.sliderItem:nth-child(2) .sliderBg{
+    background-color: yellow;
+}
+
+.sliderItem:nth-child(3) .sliderBg{
+    background-color: hotpink;
+}
+
+.sliderItem:nth-child(4) .sliderBg{
+    background-color: forestgreen;
+}
+
+.sliderItem:nth-child(5) .sliderBg{
+    background-color: crimson;
+}
+
+
+.sliderItem:nth-child(1) .sliderPrice{
+    background-color: orangered;
+}
+
+.sliderItem:nth-child(2) .sliderPrice{
+    background-color: yellow;
+}
+
+.sliderItem:nth-child(3) .sliderPrice{
+    background-color: hotpink;
+}
+
+.sliderItem:nth-child(4) .sliderPrice{
+    background-color: forestgreen;
+}
+
+.sliderItem:nth-child(5) .sliderPrice{
+    background-color: crimson;
+}
